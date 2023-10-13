@@ -28,6 +28,10 @@
             </div>
           </nav>
     </header>
-
+<main>
+    <div class="container">
+        <h1>@yield('page-name')</h1>
+    </div>
+</main>
 </body>
 </html>
