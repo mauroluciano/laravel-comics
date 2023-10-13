@@ -1,5 +1,17 @@
 @extends('layouts.app')
 @section('page-name', 'Comics')
 @section('main-section')
-<br>ciao    
+
+<div class="row">
+    @forelse ($comics as $comic)
+    <div class="col-3">
+        @include('partials._comics-card')
+
+    </div>
+        
+    @empty
+        no Comics
+    @endforelse
+</div>
+
 @endsection
