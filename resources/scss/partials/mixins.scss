@@ -1,0 +1,13 @@
+@mixin flex {
+    display: flex;
+}
+
+.container {
+    @include flex();
+    width: 100%;
+    flex-direction: column;
+}
+
+.card-body img {
+    width: 200px;
+}
